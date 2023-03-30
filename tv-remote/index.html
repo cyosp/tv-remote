@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>1.0.0</title>
+
+    <!-- https://www.iconarchive.com/show/material-icons-by-pictogrammers/remote-tv-icon.html -->
+    <link rel="icon" type="image/png" href="remote-tv-icon.64.png"/>
+
+    <meta charset="utf-8">
+    <!-- To ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Standalone iOS application -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Home screen icon designed for retina -->
+    <link rel="apple-touch-icon" sizes="180x180" href="remote-tv-icon.180.png">
+    <!-- Application home screen short name -->
+    <meta name="apple-mobile-web-app-title" content="TV Remote">
+    <!-- Application is full screen -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css?version=3.3.7">
+    <link rel="stylesheet" href="css/main.css?version=1.0.0">
+
+    <script src="js/jquery.min.js?version=2.1.4"></script>
+    <script src="js/bootstrap.min.js?version=3.3.7"></script>
+    <script src="js/main.js?version=1.0.0"></script>
+</head>
+<body onload="init()" ontouchstart=""><!-- Enable tap effects -->
+<div class="container-fluid">
+    <div class="delimiterSmall">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_POWER_ON" class="full"><span class="glyphicon glyphicon-off red-button"></span><span
+                    class="red-button"> On</span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button"></div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_POWER" class="full"><span class="glyphicon glyphicon-off red-button"></span><span
+                    class="red-button"> Off</span></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_1" class="full"><span><b>1</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_2" class="full"><span><b>2</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_3" class="full"><span><b>3</b></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_4" class="full"><span><b>4</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_5" class="full"><span><b>5</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_6" class="full"><span><b>6</b></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_7" class="full"><span><b>7</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_8" class="full"><span><b>8</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_9" class="full"><span><b>9</b></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button"></div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_0" class="full"><span><b>0</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button"></div>
+    </div>
+    <div class="delimiterMedium">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button"></div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_UP" class="full"><span class="glyphicon glyphicon-triangle-top"></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_LEFT" class="full"><span class="glyphicon glyphicon-triangle-left"></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_ENTER" class="full"><span><b>OK</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_RIGHT" class="full"><span class="glyphicon glyphicon-triangle-right"></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button"></div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_VOLDOWN" class="full"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button"></div>
+    </div>
+    <div class="delimiterMedium">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_VOLUP" class="full"><span class="glyphicon glyphicon-volume-up"></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_MUTE" class="full"><span class="glyphicon glyphicon-volume-off"></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_CHUP" class="full"><span class="glyphicon glyphicon-plus"></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_VOLDOWN" class="full"><span class="glyphicon glyphicon-volume-down"></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button"></div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="KEY_CHDOWN" class="full"><span class="glyphicon glyphicon-minus"></span></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
