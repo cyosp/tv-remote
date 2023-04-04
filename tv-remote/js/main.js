@@ -4,9 +4,21 @@ String.prototype.startsWith = function (prefix) {
 }
 
 function init() {
-    $("button").click(buttonClick);
+    let button = $("button");
+    button.bind('touchstart mousedown', setButtonBackgroundColor);
+    button.click(sendKey);
+    addEventListener("mouseup", resetButtonBackgroundColor);
+    addEventListener("touchend", resetButtonBackgroundColor);
 }
 
-function buttonClick() {
+function setButtonBackgroundColor() {
+   $(this).css("background-color", "red");
+}
+
+function sendKey() {
     $.get("remote/send-key.php?key=" + this.id);
+}
+
+function resetButtonBackgroundColor() {
+    $("button").css("background-color", "#424242");
 }
