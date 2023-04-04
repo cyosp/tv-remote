@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 1.1.1 (2023-04-04)
+ * Stop zooming on iOS devices
+
 ##### 1.1.0 (2023-04-04)
  * Change button background on a user interaction
  * Fix incorrect 'key down' id
