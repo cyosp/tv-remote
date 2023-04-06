@@ -19,6 +19,10 @@ body, button {
     color: tomato;
 }
 
+.version {
+    border: none;
+}
+
 /* Button text color */
 span {
     color: white;

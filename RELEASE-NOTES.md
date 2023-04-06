@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 1.2.0 (2023-04-06)
+ * Display app version between power buttons
+
 ##### 1.1.1 (2023-04-04)
  * Stop zooming on iOS devices
 
