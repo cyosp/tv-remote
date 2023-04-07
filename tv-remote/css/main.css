@@ -28,6 +28,10 @@ span {
     color: white;
 }
 
+.y-mirror {
+    transform: scaleX(-1)
+}
+
 /*  Little height delimiter between buttons */
 .delimiterSmall {
     height: 5px;

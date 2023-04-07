@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 1.3.0 (2023-04-07)
+ * Add return and guide buttons
+
 ##### 1.2.0 (2023-04-06)
  * Display app version between power buttons
 
