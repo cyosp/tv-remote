@@ -13,7 +13,7 @@ def is_not_alive():
 
 
 key = ' '.join(sys.argv[1:])
-if key == 'KEY_POWER_ON':
+if key == 'KEY_POWER' and is_not_alive():
     wakeonlan.send_magic_packet(tvMacAddr)
-else:
-    SamsungTV(tvIpAddr, tvRemoteToken).send_key(key)
+
+SamsungTV(tvIpAddr, tvRemoteToken).send_key(key)

@@ -1,5 +1,9 @@
 Release notes
 -------------
+##### 1.4.0 (2023-04-08)
+ * Fix: Power on when TV is in stand by
+ * Use a single power button
+
 ##### 1.3.0 (2023-04-07)
  * Add return and guide buttons
 
