@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 1.5.0 (2023-04-09)
+ * Add source and home buttons
+
 ##### 1.4.0 (2023-04-08)
  * Fix: Power on when TV is in stand by
  * Use a single power button
