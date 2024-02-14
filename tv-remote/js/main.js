@@ -16,7 +16,7 @@ function setButtonBackgroundColor() {
 }
 
 function sendKey() {
-    $.get("remote/send-key.php?key=" + this.id);
+    $.get("remote/send-key.php?key=" + this.id + "&ts=" + Date.now());
 }
 
 function resetButtonBackgroundColor() {

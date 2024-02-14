@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 1.5.1 (2024-02-14)
+ * Fix: Several press on a same button results into only one call
+
 ##### 1.5.0 (2023-04-09)
  * Add source and home buttons
 
