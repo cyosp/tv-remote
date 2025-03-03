@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 2.0.0 (2025-03-03)
+ * Replace Python integration by api-samsungtv backend
+
 ##### 1.5.1 (2024-02-14)
  * Fix: Several press on a same button results into only one call
 

@@ -8,29 +8,16 @@ Remote for Samsung TV
 ## Prerequisites
 
 Serveur side:
-* PHP
-* Python 3 with packages:
-  * wakeonlan
-  * websocket-client
+* api-samsungtv
 
 ## Configuration
 
-It's the Python file `tv-remote/remote/config.py` which contains variables:
- * tvIpAddr : TV IP address
- * tvMacAddr : TV MAC address
- * tvRemoteToken : TV remote token
+[tv-remote](https://github.com/cyosp/tv-remote) needs to configure one thing:
+* [api-samsungtv](https://github.com/cyosp/api-samsungtv) base URL
 
-### Create a token
+It must be filled in the JavaScript configuration file:
 
-First you must configure TV IP address and then run:
-
-```
-cd tv-remote/remote
-python3 send-key.py
-```
-
-You must use original Samsung TV remote to allow the created token to be validated.</br>
-Token is then displayed on standard output and must be stored in configuration file.
+	tv-remote/js/config.js
 
 ## License
 
