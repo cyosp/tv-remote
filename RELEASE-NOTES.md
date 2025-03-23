@@ -1,5 +1,8 @@
 Release notes
 -------------
+##### 2.1.0 (2025-03-23)
+ * Add run apps capability
+
 ##### 2.0.0 (2025-03-03)
  * Replace Python integration by api-samsungtv backend
 

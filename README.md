@@ -8,14 +8,15 @@ Remote for Samsung TV
 ## Prerequisites
 
 Serveur side:
-* api-samsungtv
+* api-samsungtv ⑂ CYOSP ≥ 1.0.0.3
 
 ## Configuration
 
-[tv-remote](https://github.com/cyosp/tv-remote) needs to configure one thing:
+[tv-remote](https://github.com/cyosp/tv-remote) needs to configure:
 * [api-samsungtv](https://github.com/cyosp/api-samsungtv) base URL
+* Optionally apps to run
 
-It must be filled in the JavaScript configuration file:
+These parameters must be filled in the JavaScript configuration file:
 
 	tv-remote/js/config.js
 

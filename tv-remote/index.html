@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-    <title>2.0.0</title>
+    <title>2.1.0</title>
 
     <!-- https://www.icone-png.com/png/32/31912.png -->
     <link rel="icon" type="image/png" href="31912-64.png"/>
@@ -20,128 +20,131 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link rel="stylesheet" href="css/bootstrap.min.css?version=3.3.7">
-    <link rel="stylesheet" href="css/main.css?version=2.0.0">
+    <link rel="stylesheet" href="css/main.css?version=2.1.0">
 
     <script src="js/jquery.min.js?version=2.1.4"></script>
     <script src="js/bootstrap.min.js?version=3.3.7"></script>
-    <script src="js/config.js?version=2.0.0"></script>
-    <script src="js/main.js?version=2.0.0"></script>
+    <script src="js/config.js?version=2.1.0"></script>
+    <script src="js/main.js?version=2.1.0"></script>
 </head>
 <body onload="init()" ontouchstart=""><!-- Enable tap effects -->
 <div class="container-fluid">
     <div class="delimiterSmall">&nbsp;</div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="POWER" class="full"><span class="glyphicon glyphicon-off red-button"></span></button>
+            <button id="key/POWER" class="full"><span class="glyphicon glyphicon-off red-button"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
             <button disabled class="full version">
-                <span>2.0.0</span>
+                <span>2.1.0</span>
             </button>
             <span style="display: flex; justify-content: center"></span></div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="SOURCE" class="full">
+            <button id="key/SOURCE" class="full">
                 <span>SRC</span>
             </button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="1" class="full"><span><b>1</b></span></button>
+            <button id="key/1" class="full"><span><b>1</b></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="2" class="full"><span><b>2</b></span></button>
+            <button id="key/2" class="full"><span><b>2</b></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="3" class="full"><span><b>3</b></span></button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 col-xs-4 button">
-            <button id="4" class="full"><span><b>4</b></span></button>
-        </div>
-        <div class="col-md-4 col-xs-4 button">
-            <button id="5" class="full"><span><b>5</b></span></button>
-        </div>
-        <div class="col-md-4 col-xs-4 button">
-            <button id="6" class="full"><span><b>6</b></span></button>
+            <button id="key/3" class="full"><span><b>3</b></span></button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="7" class="full"><span><b>7</b></span></button>
+            <button id="key/4" class="full"><span><b>4</b></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="8" class="full"><span><b>8</b></span></button>
+            <button id="key/5" class="full"><span><b>5</b></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="9" class="full"><span><b>9</b></span></button>
+            <button id="key/6" class="full"><span><b>6</b></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4 button">
+            <button id="key/7" class="full"><span><b>7</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="key/8" class="full"><span><b>8</b></span></button>
+        </div>
+        <div class="col-md-4 col-xs-4 button">
+            <button id="key/9" class="full"><span><b>9</b></span></button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button"></div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="0" class="full"><span><b>0</b></span></button>
+            <button id="key/0" class="full"><span><b>0</b></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button"></div>
     </div>
     <div class="delimiterMedium">&nbsp;</div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="RETURN" class="full"><span class="glyphicon glyphicon-share-alt y-mirror"></span></button>
+            <button id="key/RETURN" class="full"><span class="glyphicon glyphicon-share-alt y-mirror"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="UP" class="full"><span class="glyphicon glyphicon-triangle-top"></span></button>
+            <button id="key/UP" class="full"><span class="glyphicon glyphicon-triangle-top"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button"></div>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="LEFT" class="full"><span class="glyphicon glyphicon-triangle-left"></span></button>
+            <button id="key/LEFT" class="full"><span class="glyphicon glyphicon-triangle-left"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="ENTER" class="full"><span><b>OK</b></span></button>
+            <button id="key/ENTER" class="full"><span><b>OK</b></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="RIGHT" class="full"><span class="glyphicon glyphicon-triangle-right"></span></button>
+            <button id="key/RIGHT" class="full"><span class="glyphicon glyphicon-triangle-right"></span></button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button"></div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="DOWN" class="full"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+            <button id="key/DOWN" class="full"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button"></div>
     </div>
     <div class="delimiterMedium">&nbsp;</div>
     <div class="row">
         <div class="col-md-12 col-xs-12 button">
-            <button id="HOME" class="full"><span class="glyphicon glyphicon-home"></span></button>
+            <button id="key/HOME" class="full"><span class="glyphicon glyphicon-home"></span></button>
         </div>
     </div>
     <div class="delimiterMedium">&nbsp;</div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="VOLUP" class="full"><span class="glyphicon glyphicon-volume-up"></span></button>
+            <button id="key/VOLUP" class="full"><span class="glyphicon glyphicon-volume-up"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="MUTE" class="full"><span class="glyphicon glyphicon-volume-off"></span></button>
+            <button id="key/MUTE" class="full"><span class="glyphicon glyphicon-volume-off"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="CHUP" class="full"><span class="glyphicon glyphicon-plus"></span></button>
+            <button id="key/CHUP" class="full"><span class="glyphicon glyphicon-plus"></span></button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-4 button">
-            <button id="VOLDOWN" class="full"><span class="glyphicon glyphicon-volume-down"></span></button>
+            <button id="key/VOLDOWN" class="full"><span class="glyphicon glyphicon-volume-down"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="GUIDE" class="full"><span class="glyphicon glyphicon-list-alt"></span></button>
+            <button id="key/GUIDE" class="full"><span class="glyphicon glyphicon-list-alt"></span></button>
         </div>
         <div class="col-md-4 col-xs-4 button">
-            <button id="CHDOWN" class="full"><span class="glyphicon glyphicon-minus"></span></button>
+            <button id="key/CHDOWN" class="full"><span class="glyphicon glyphicon-minus"></span></button>
         </div>
     </div>
+
+    <div class="delimiterMedium"></div>
+    <div id="app"></div>
 </div>
 </body>
 </html>
